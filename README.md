@@ -7,7 +7,43 @@
 3. [Keras Aktivačné Funkcie](https://www.tensorflow.org/api_docs/python/tf/keras/activations)  
 4. [Dataset Opice 10 Monkey Species z Kaggle](https://www.kaggle.com/datasets/slothkong/10-monkey-species)  
 5. [Ahmed Gaber Convolutional neural network z Kaggle](https://www.kaggle.com/code/gaber0512/monkey-species-convolutional-neural-network)  
-6. [Képešiová Zuzana - Inteligentné metódy diagnostiky a riadenia mechatronických systémov](https://www.fei.stuba.sk/buxus/docs/2020/Kepesiova_autoreferat.pdf)  
+6. [Képešiová Zuzana - Inteligentné metódy diagnostiky a riadenia mechatronických systémov](https://www.fei.stuba.sk/buxus/docs/2020/Kepesiova_autoreferat.pdf) 
+
+## Použité experimenty
+### Experiment 000
+```python
+{
+   # Nazov experimentu
+   "name": "exp_000",
+   # Počet konvolučných blokov
+   "conv_num": 2,
+   # V rámci konvolučných vrstviev, používame rôzne typy filtrov
+   "filter_num": 32,
+   # Rôzne velkosti filtrov
+   "filter_size": (3, 3),
+   # Veľkosť max_poolingu, aby sme redukovali výsledné matematické operácie, ktoré prebehli cez konvolúcie
+   # a potom výsledné matice, akým spôsobom sa zgrupovali a zmenšovali, aby sa neuronová sieť rýchlejšie natrénovala
+   # a lepšie rozpoznávala jednotlivé oblasti
+   "max_pooling": (2, 2),
+   # Regularizačná technika, pri prepojených/plne prepojených vrstvách bude náhodne dávať váhu
+   # jednotlivých prepojení na 0, čiže ako keby ich vypol
+   # Regularizačný prvok, vďaka týmto výpadkom je neuronová sieť vyslovene nútená hladať prepojenia vo vzoroch
+   # Môže tam byť nejaký šum
+   # 0.2 znamená, že 20 % prepojení nám náhodne vypadne, dropoutom sa vynulujú tie prepojenie, nevymažú sa vyslovene
+   "dropout": 0.2,
+   # Optimalizátor, najzákladnejší
+   "optimizer": "adam",
+   # Veľkosť dávky, v ktorom neuronová sieť bude jednotlivé informácie vyhodnocovať
+   # na koľko obrázkov sa naraz pozrie než sa aktualizuje
+   "batch_size": 16,
+   # Ak je True využite sa funkcia maxpooling, ak je False využije sa averagepooling
+   "is_max_pooling": True,
+}
+```
+![exp_000](https://user-images.githubusercontent.com/24510943/210070092-ede169c6-f33d-432e-bf8c-18f4c80f31e5.png)
+
+
+
 
 ## 🐞 Problémy (bugy), na ktoré som narazil
 
