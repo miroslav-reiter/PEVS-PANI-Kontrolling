@@ -1,13 +1,13 @@
 # 📈 Kontrolling (PEVS-PANI)
 ⚙️ Zdrojové kódy a projekty z predmetu Kontrolling na DNN (Deep Neural Network) na PEVS/PANI
 
-## 📚 Dôležité zdroje/dokumentácia
-1. [TensorFlow Keras dokumentácia](https://www.tensorflow.org/api_docs/python/tf/keras)  
-2. [Keras Optimalizátory](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers)  
-3. [Keras Aktivačné Funkcie](https://www.tensorflow.org/api_docs/python/tf/keras/activations)  
-4. [Dataset Opice 10 Monkey Species z Kaggle](https://www.kaggle.com/datasets/slothkong/10-monkey-species)  
-5. [Ahmed Gaber Convolutional neural network z Kaggle](https://www.kaggle.com/code/gaber0512/monkey-species-convolutional-neural-network)  
-6. [Képešiová Zuzana - Inteligentné metódy diagnostiky a riadenia mechatronických systémov](https://www.fei.stuba.sk/buxus/docs/2020/Kepesiova_autoreferat.pdf) 
+## Trénovacie a Validačné Vzorky
+Na vstupe (vstupnej vrstve) máme RGB obrázky o veľkosti 128 x 128 px, 3 kanály. Veľkosť trénovacích vzoriek je 1098 a počet validačných vzoriek je 277. Rozdelenie je teda 80 % trénovacie vzorky a 20 % validačné t.j. paretovo pravidlo 80/20.
+
+|     Celkový počet   vzoriek:         |     1370    |     100%    |
+|--------------------------------------|-------------|-------------|
+|     Počet trénovacích   vzoriek:     |     1098    |     80%     |
+|     Počet validačných   vzoriek:     |     272     |     20%     |
 
 ## Použité experimenty
 ### Experiment 000
@@ -118,3 +118,10 @@ https://stackoverflow.com/questions/71153492/invalid-argument-error-graph-execut
 **Riešenie:**   
 Dense pri vrstvách z Kerasu nastaviť na rovnaký počet ako má byť priečinkov/tried. Pri psoch a mačkach boli logicky 2, pri 10 druhov opíc na 10.  
 
+## 📚 Dôležité zdroje/dokumentácia
+1. [TensorFlow Keras dokumentácia](https://www.tensorflow.org/api_docs/python/tf/keras)  
+2. [Keras Optimalizátory](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers)  
+3. [Keras Aktivačné Funkcie](https://www.tensorflow.org/api_docs/python/tf/keras/activations)  
+4. [Dataset Opice 10 Monkey Species z Kaggle](https://www.kaggle.com/datasets/slothkong/10-monkey-species)  
+5. [Ahmed Gaber Convolutional neural network z Kaggle](https://www.kaggle.com/code/gaber0512/monkey-species-convolutional-neural-network)  
+6. [Képešiová Zuzana - Inteligentné metódy diagnostiky a riadenia mechatronických systémov](https://www.fei.stuba.sk/buxus/docs/2020/Kepesiova_autoreferat.pdf) 
