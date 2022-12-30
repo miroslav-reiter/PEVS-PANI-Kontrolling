@@ -75,10 +75,10 @@ python
 
 ## 📋 Tensorboard
 Port si môžeme zvoliť ale aj nemusíme a Tensorborad vyberie voľný/dostupný port
-Nezabudnúť si nastaviť premenné prostredia environy pre cestz/path
-C:\ProgramData\Anaconda3\Library\bin\conda.bat
-C:\ProgramData\Anaconda3\Scripts\conda.exe
-C:\ProgramData\Anaconda3\condabin\conda.bat
+Nezabudnúť si nastaviť premenné prostredia environy pre cesty/path
+- C:\ProgramData\Anaconda3\Library\bin\conda.bat  
+- C:\ProgramData\Anaconda3\Scripts\conda.exe  
+- C:\ProgramData\Anaconda3\condabin\conda.bat  
 
 Test v príkazovom riadku:
 ``
@@ -91,10 +91,15 @@ where conda
 
 
 ``
-# v Príkazovom riadku CMD Anaconda (Anaconda Prompt (Anaconda3))
-tensorboard --logdir=C:\Users\miros\PycharmProjects\DNN2_2_Definicia_Datasetu\logs --host=127.0.0.1
-tensorboard --logdir=C:\Users\miros\PycharmProjects\Kontrolling\logs --host=127.0.0.1
+# V príkazovom riadku CMD Anaconda (Anaconda Prompt (Anaconda3))
+# Najprv treba aktivovať virtuálne prostredie  
+conda activate Kontrolling  
+conda activate DNN2_2_Definicia_Datasetu  
+tensorboard --logdir=C:\Users\miros\PycharmProjects\DNN2_2_Definicia_Datasetu\logs --host=127.0.0.1  
+tensorboard --logdir=C:\Users\miros\PycharmProjects\Kontrolling\logs --host=127.0.0.1  
 ``
+
+**TIP:** Kopírovanie path/cesty priamo z PyCharm v okne Project (Pravé tlačidlo myši) a Copy Path/Reference -> Absolute Path
 
 ## 🐞 Problémy (bugy), na ktoré som narazil
 
