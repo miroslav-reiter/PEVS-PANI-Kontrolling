@@ -118,11 +118,11 @@ https://stackoverflow.com/questions/71153492/invalid-argument-error-graph-execut
 **Riešenie:**   
 Dense pri vrstvách z Kerasu nastaviť na rovnaký počet ako má byť priečinkov/tried. Pri psoch a mačkach boli logicky 2, pri 10 druhov opíc na 10.  
 
-6. Problém s nesprávnou veľkosťou validačnej zložky miesto 272 bola 2720...
-**Riešenie:**  
-Jednoduchá kontrola či máme pomer 80/20 alebo 70/30 (Trenovácie/Validačné) alebo (Trenovácie/Validačné+Testovacie) 
+6. Problém s nesprávnou veľkosťou validačnej zložky miesto 272 bola 2720...  
+**Riešenie:**    
+Jednoduchá kontrola či máme pomer 80/20 alebo 70/30 (Trenovácie/Validačné) alebo (Trenovácie/Validačné+Testovacie)   
 
-## 📚 Dôležité zdroje/dokumentácia
+## 📚 Dôležité zdroje/dokumentácia  
 1. [TensorFlow Keras dokumentácia](https://www.tensorflow.org/api_docs/python/tf/keras)  
 2. [Keras Optimalizátory](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers)  
 3. [Keras Aktivačné Funkcie](https://www.tensorflow.org/api_docs/python/tf/keras/activations)  
