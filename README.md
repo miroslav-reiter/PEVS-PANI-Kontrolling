@@ -1,7 +1,7 @@
 # Kontrolling (PEVS-PANI)
 ⚙️ Zdrojové kódy a projekty z predmetu Kontrolling na DNN (Deep Neural Network) na PEVS/PANI
 
-## 🐞 Problémy (bugy), na ktoré som narazil:
+## 🐞 Problémy (bugy), na ktoré som narazil
 
 1. Problém s najnovšou verziou PyCharm 2022.3 s Jetbrains ToolBox (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker   
 
