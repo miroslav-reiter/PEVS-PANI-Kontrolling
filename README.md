@@ -1,5 +1,11 @@
-# Kontrolling (PEVS-PANI)
+# 📈 Kontrolling (PEVS-PANI)
 ⚙️ Zdrojové kódy a projekty z predmetu Kontrolling na DNN (Deep Neural Network) na PEVS/PANI
+
+## 📚 Dôležité zdroje/dokumentácia:
+[TensorFlow Keras dokumentácia](https://www.tensorflow.org/api_docs/python/tf/keras)
+[Keras Optimalizátory](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers)
+[Keras Aktivačné Funkcie](https://www.tensorflow.org/api_docs/python/tf/keras/activations)
+[Dataset Opice 10 Monkey Species z Kaggle](https://www.kaggle.com/datasets/slothkong/10-monkey-species)
 
 ## 🐞 Problémy (bugy), na ktoré som narazil
 
