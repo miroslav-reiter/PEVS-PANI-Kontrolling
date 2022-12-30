@@ -3,7 +3,7 @@
 
 ## 🐞 Problémy (bugy), na ktoré som narazil:
 
-1. Problém s najnovšou verziu PyCharm (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker 
+1. Problém s najnovšou verziu PyCharm s Jetbrains ToolBox (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker 
 Riešenie: winrat
 
 ```
