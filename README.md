@@ -102,6 +102,8 @@ tensorboard --logdir=C:\Users\miros\PycharmProjects\Kontrolling\logs --host=127.
 
 **TIP:** Kopírovanie path/cesty priamo z PyCharm v okne Project (Pravé tlačidlo myši) a Copy Path/Reference -> Absolute Path
 
+<img width="603" alt="2022-12-30 14_32_29-C__Users_miros_OneDrive_! Moje_Škola_PANI PEVŠ_Informatika IT_! Predmety_! 3  Ro" src="https://user-images.githubusercontent.com/24510943/210075614-e5a0d6ea-d86f-4aee-899b-4138e748ee56.png">
+
 ## 🐞 Problémy (bugy), na ktoré som narazil
 
 1. Problém s najnovšou verziou PyCharm 2022.3 s Jetbrains ToolBox (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker   
