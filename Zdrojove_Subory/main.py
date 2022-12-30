@@ -40,7 +40,7 @@ nb_train_samples = 1098
 nb_validation_samples = 272
 # Počet epoch, na ktorých sa bude tento model trénovať
 # Koľkokrát prebehne tým datasetom, koľkokrát sa budú aktualizovať váhy
-epochs = 50
+epochs = 60
 
 # create logdir if it does not exist
 # Vytvoríme zložky Logy, do ktorej budeme ukladať tieto priebežné metriky a výsledky z trénovania
@@ -70,14 +70,14 @@ experimenty = [
         # Regularizačný prvok, vďaka týmto výpadkom je neuronová sieť vyslovene nútená hladať prepojenia vo vzoroch
         # Môže tam byť nejaký šum
         # 0.2 znamená, že 20 % prepojení nám náhodne vypadne, dropoutom sa vynulujú tie prepojenie, nevymažú sa vyslovene
-        "dropout": 0.2,
+        "dropout": 0.5,
         # Optimalizátor, najzákladnejší
-        "optimizer": "adam",
+        "optimizer": "SGD", # adam
         # Veľkosť dávky, v ktorom neuronová sieť bude jednotlivé informácie vyhodnocovať
         # na koľko obrázkov sa naraz pozrie než sa aktualizuje
-        "batch_size": 16,
+        "batch_size": 32,
         # Ak je True využite sa funkcia maxpooling, ak je False využije sa averagepooling
-        "is_max_pooling": True,
+        "is_max_pooling": False,
     },
     # Rozdiel medzi exp_000, exp_001 a exp_002:
     # - Rôzne velkosti filtrov (filter_size) 3,3 a 5,5
@@ -88,9 +88,9 @@ experimenty = [
         "filter_num": 32,
         "filter_size": (5, 5),
         "max_pooling": (2, 2),
-        "dropout": 0.2,
-        "optimizer": "adam",
-        "batch_size": 16,
+        "dropout": 0.3,
+        "optimizer": "SGD", # adam
+        "batch_size": 32,
         "is_max_pooling": False,
     },
     {
@@ -100,8 +100,8 @@ experimenty = [
         "filter_size": (3, 3),
         "max_pooling": (2, 2),
         "dropout": 0.2,
-        "optimizer": "adam",
-        "batch_size": 16,
+        "optimizer": "SGD", # adam
+        "batch_size": 32,
         "is_max_pooling": False,
     },
 ]
