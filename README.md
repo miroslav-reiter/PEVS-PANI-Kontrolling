@@ -99,6 +99,7 @@ conda activate DNN2_2_Definicia_Datasetu
 tensorboard --logdir=C:\Users\miros\PycharmProjects\DNN2_2_Definicia_Datasetu\logs --host=127.0.0.1  
 tensorboard --logdir=C:\Users\miros\PycharmProjects\Kontrolling\logs --host=127.0.0.1  
 ```
+TensorBoard potom beží na URL: http://127.0.0.1:6006/  
 
 **TIP:** Kopírovanie path/cesty priamo z PyCharm v okne Project (Pravé tlačidlo myši) a Copy Path/Reference -> Absolute Path
 
