@@ -1,5 +1,5 @@
 # Kontrolling (PEVS-PANI)
-⚙️ Zdrojové kódy a projekty z predmetu Kontrolling na DNN na PEVS/PANI
+⚙️ Zdrojové kódy a projekty z predmetu Kontrolling na DNN (Deep Neural Network) na PEVS/PANI
 
 ## 🐞 Problémy (bugy), na ktoré som narazil:
 
