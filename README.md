@@ -90,14 +90,14 @@ where conda
 <img width="818" alt="enviro" src="https://user-images.githubusercontent.com/24510943/210074772-6f2010cf-7848-488a-8aaf-07213f2af3f3.png">
 
 
-``
+```
 # V príkazovom riadku CMD Anaconda (Anaconda Prompt (Anaconda3))
 # Najprv treba aktivovať virtuálne prostredie  
 conda activate Kontrolling  
 conda activate DNN2_2_Definicia_Datasetu  
 tensorboard --logdir=C:\Users\miros\PycharmProjects\DNN2_2_Definicia_Datasetu\logs --host=127.0.0.1  
 tensorboard --logdir=C:\Users\miros\PycharmProjects\Kontrolling\logs --host=127.0.0.1  
-``
+```
 
 **TIP:** Kopírovanie path/cesty priamo z PyCharm v okne Project (Pravé tlačidlo myši) a Copy Path/Reference -> Absolute Path
 
