@@ -4,7 +4,8 @@
 ## 🐞 Problémy (bugy), na ktoré som narazil:
 
 1. Problém s najnovšou verziou PyCharm 2022.3 s Jetbrains ToolBox (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker 
-Riešenie: winrat
+Riešenie: 
+winrat a nepoužívať Jetbrains Toolbox  
 
 ```
 net stop winnat
