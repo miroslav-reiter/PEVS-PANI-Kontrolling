@@ -3,7 +3,7 @@
 
 ## 🐞 Problémy (bugy), na ktoré som narazil:
 
-1. Problém s najnovšou verziu PyCharm s Jetbrains ToolBox (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker 
+1. Problém s najnovšou verziu PyCharm 2022.3 s Jetbrains ToolBox (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker 
 Riešenie: winrat
 
 ```
@@ -16,7 +16,11 @@ net start winnat
 
 ![Python-Interpreter-baliky-NG](https://user-images.githubusercontent.com/24510943/210062685-535f2e93-3a6a-43e2-9e74-9df6d9ced886.png)
 
-3. Problém s duplicitou knižnic
+3. Problém s verziu Pythonu v interpreteri
+Riešenie:
+Treba použiť v Interpreteri pre Conda Python 3.8 t.j. downgrade verzie z 3.9 až 3.10.
+
+4. Problém s duplicitou knižnic
 https://stackoverflow.com/questions/20554074/sklearn-omp-error-15-initializing-libiomp5md-dll-but-found-mk2iomp5md-dll-a
 
 ```
@@ -27,7 +31,7 @@ Riešenie:
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 alebo vymazať libiomp5md.dll
 
-4. Problém s vygenerovaním dát pre 1. epochu (Invalid Argument Error / Graph Execution Error)
+5. Problém s vygenerovaním dát pre 1. epochu (Invalid Argument Error / Graph Execution Error)
 https://stackoverflow.com/questions/71153492/invalid-argument-error-graph-execution-error
 
 Riešenie:
