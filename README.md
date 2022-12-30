@@ -92,6 +92,7 @@ where conda
 
 ```
 # V príkazovom riadku CMD Anaconda (Anaconda Prompt (Anaconda3))
+cd C:\Users\miros\PycharmProjects\DNN2_2_Definicia_Datasetu
 # Najprv treba aktivovať virtuálne prostredie  
 conda activate Kontrolling  
 conda activate DNN2_2_Definicia_Datasetu  
