@@ -40,9 +40,38 @@
    "is_max_pooling": True,
 }
 ```
-![exp_000](https://user-images.githubusercontent.com/24510943/210070092-ede169c6-f33d-432e-bf8c-18f4c80f31e5.png)
+![exp_000](https://user-images.githubusercontent.com/24510943/210070243-b4430452-2064-48ba-a90c-84dbdd455262.png)
 
-
+### Experiment 001 a 002
+```
+python
+# Rozdiel medzi exp_000, exp_001 a exp_002:
+# - Rôzne velkosti filtrov (filter_size) 3,3 a 5,5
+# - Rôzne is_max_pooling exp_000 použije maxpooling exp_001 použije averagepooling
+{
+    "name": "exp_001",
+    "conv_num": 2,
+    "filter_num": 32,
+    "filter_size": (5, 5),
+    "max_pooling": (2, 2),
+    "dropout": 0.2,
+    "optimizer": "adam",
+    "batch_size": 16,
+    "is_max_pooling": False,
+},
+{
+    "name": "exp_002",
+    "conv_num": 2,
+    "filter_num": 32,
+    "filter_size": (3, 3),
+    "max_pooling": (2, 2),
+    "dropout": 0.2,
+    "optimizer": "adam",
+    "batch_size": 16,
+    "is_max_pooling": False,
+}
+```
+![exp_001a002](https://user-images.githubusercontent.com/24510943/210070598-00283f24-f3b5-41a6-abd5-f840efa56b0e.png)
 
 
 ## 🐞 Problémy (bugy), na ktoré som narazil
