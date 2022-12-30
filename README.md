@@ -73,6 +73,26 @@ python
 ```
 ![exp_001a002](https://user-images.githubusercontent.com/24510943/210070598-00283f24-f3b5-41a6-abd5-f840efa56b0e.png)
 
+## 📋 Tensorboard
+Port si môžeme zvoliť ale aj nemusíme a Tensorborad vyberie voľný/dostupný port
+Nezabudnúť si nastaviť premenné prostredia environy pre cestz/path
+C:\ProgramData\Anaconda3\Library\bin\conda.bat
+C:\ProgramData\Anaconda3\Scripts\conda.exe
+C:\ProgramData\Anaconda3\condabin\conda.bat
+
+Test v príkazovom riadku:
+``
+where conda
+``
+<img width="361" alt="2022-12-30 14_21_22-Anaconda Prompt (Anaconda3)" src="https://user-images.githubusercontent.com/24510943/210074585-dcf38939-73bf-438a-92f0-001db657a21c.png">
+
+<img width="818" alt="enviro" src="https://user-images.githubusercontent.com/24510943/210074678-9bf97d00-c4c0-4c07-911b-3bc197a14868.png">
+
+``
+# v Príkazovom riadko Anaconda (Anaconda Prompt (Anaconda3))
+tensorboard --logdir=C:\Users\miros\PycharmProjects\DNN2_2_Definicia_Datasetu\logs --host=127.0.0.1
+tensorboard --logdir=C:\Users\miros\PycharmProjects\Kontrolling\logs --host=127.0.0.1
+``
 
 ## 🐞 Problémy (bugy), na ktoré som narazil
 
