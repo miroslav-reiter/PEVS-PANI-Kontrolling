@@ -74,8 +74,8 @@ python
 ![exp_001a002](https://user-images.githubusercontent.com/24510943/210070598-00283f24-f3b5-41a6-abd5-f840efa56b0e.png)
 
 ## 📋 Tensorboard
-Port si môžeme zvoliť ale aj nemusíme a Tensorborad vyberie voľný/dostupný port
-Nezabudnúť si nastaviť premenné prostredia environy pre cesty/path
+Port si môžeme zvoliť, ale aj nemusíme a Tensorborad vyberie voľný/dostupný port.   
+Nezabudnúť si nastaviť premenné prostredia (environy| pre cesty/path
 - C:\ProgramData\Anaconda3\Library\bin\conda.bat  
 - C:\ProgramData\Anaconda3\Scripts\conda.exe  
 - C:\ProgramData\Anaconda3\condabin\conda.bat  
