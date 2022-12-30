@@ -3,7 +3,7 @@
 
 ## 🐞 Problémy (bugy), na ktoré som narazil:
 
-1. Problém s najnovšou verziu PyCharm 2022.3 s Jetbrains ToolBox (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker 
+1. Problém s najnovšou verziou PyCharm 2022.3 s Jetbrains ToolBox (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker 
 Riešenie: winrat
 
 ```
@@ -25,7 +25,8 @@ https://stackoverflow.com/questions/20554074/sklearn-omp-error-15-initializing-l
 
 ```
 # OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5 already initialized.
-# OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the process, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+# OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. 
+# That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the process, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
 ```
 Riešenie:
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
