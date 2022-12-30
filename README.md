@@ -10,6 +10,7 @@ Na vstupe (vstupnej vrstve) máme RGB obrázky o veľkosti 128 x 128 px, 3 kaná
 |     Počet validačných   vzoriek:     |     272     |     20%     |
 
 ## Použité experimenty
+## 1. várka
 ### Experiment 000
 ```python
 {
@@ -72,6 +73,45 @@ python
 }
 ```
 ![exp_001a002](https://user-images.githubusercontent.com/24510943/210070598-00283f24-f3b5-41a6-abd5-f840efa56b0e.png)
+
+## 2. várka expirimentov (batch_size=32, epochy=60, rôzne dropouty)
+```python
+{
+    "name": "exp_000",
+    "conv_num": 2,
+    "filter_num": 32,
+    "filter_size": (3, 3),
+    "max_pooling": (2, 2),
+    "dropout": 0.5,
+    "optimizer": "adam",
+    "batch_size": 32,
+    "is_max_pooling": False,
+},
+{
+    "name": "exp_001",
+    "conv_num": 2,
+    "filter_num": 32,
+    "filter_size": (5, 5),
+    "max_pooling": (2, 2),
+    "dropout": 0.3,
+    "optimizer": "adam",
+    "batch_size": 32,
+    "is_max_pooling": False,
+},
+{
+    "name": "exp_002",
+    "conv_num": 2,
+    "filter_num": 32,
+    "filter_size": (3, 3),
+    "max_pooling": (2, 2),
+    "dropout": 0.2,
+    "optimizer": "adam",
+    "batch_size": 32,
+    "is_max_pooling": False,
+}
+```
+
+![carbon](https://user-images.githubusercontent.com/24510943/210101954-ed00943d-8cfe-40ef-b5bf-58f22bf8e38f.png)
 
 ## 📋 Tensorboard
 Port si môžeme zvoliť, ale aj nemusíme a Tensorborad vyberie voľný/dostupný port.   
