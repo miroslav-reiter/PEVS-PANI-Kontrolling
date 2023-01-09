@@ -150,7 +150,7 @@ TensorBoard potom beží na URL: http://127.0.0.1:6006/
 1. Problém s najnovšou verziou PyCharm 2022.3 s Jetbrains ToolBox (aj Community aj Professional edícia) s portami pri nainštalovaní Hyper-V, Docker   
 
 **Riešenie:**  
-winrat a nepoužívať Jetbrains Toolbox    
+winnat a nepoužívať Jetbrains Toolbox    
 
 ```
 net stop winnat
