@@ -1,0 +1,37 @@
+[System]
+Name='Pracka_Miele_Fuzzy'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='ZB'
+Range=[20 100]
+NumMFs=2
+MF1='zaspinenie_bielizne_nizke':'trapmf',[0 20 25 75]
+MF2='zaspinenie_bielizne_vysoke':'trapmf',[40 95 100 114]
+
+[Input2]
+Name='M'
+Range=[0 8]
+NumMFs=2
+MF1='hmotnost_bielizne_nizka':'trapmf',[-3 0 1.2 4.97397769516729]
+MF2='hmotnost_bielizne_vysoka':'trapmf',[2.37 6.56505576208178 11 15]
+
+[Output1]
+Name='MP'
+Range=[15 110]
+NumMFs=2
+MF1='mnozstvo_prasku_male':'trapmf',[-20.6 11 40 80]
+MF2='mnozstvo_prasku_velke':'trapmf',[40.1 80 114 146]
+
+[Rules]
+2 2, 2 (1) : 1
+1 1, 1 (1) : 1
